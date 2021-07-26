@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link kit font -->
+    <script src="https://kit.fontawesome.com/d716d0da8b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Fakebook</title>
+</head>
+<body>
+    
+    <nav>
+        <div class="nav-left">
+            <img src="./img/Fakebook.webp" class="logo" alt="logo Fakebook">
+            <ul>
+                <li><img src="./img/notification.png" alt="notification"></li>
+                <li><img src="./img/inbox.png" alt="inbox"></li>
+                <li><img src="./img/video.png" alt="video"></li>
+            </ul>
+        </div>
+
+        <div class="nav-right">
+            <div class="search-box">
+                <img src="./img/search.png" alt="Search">
+                <label>
+                    <input type="text" placeholder="Search">
+                </label>
+            </div>
+
+            <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+                <img src="./img/profile-pic.png" alt="foto profilo utente">
+            </div>
+
+        </div>
+
+        <!-- Settings Menu -->
+        <div class="settings-menu">
+
+			<div id="dark-btn">
+				<span></span>
+			</div>
+
+            <div class="settings-menu-inner">
+                <div class="user-profile">
+                    <img src="./img/profile-pic.png" alt="Profilo">
+                    <div>
+                        <p>Christian Koscielniak Pinto</p>
+                        <a href="#">See your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="./img/feedback.png" alt="Profilo">
+                    <div>
+                        <p>Give Feedback</p>
+                        <a href="#">Help us to improve new design</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="settings-link">
+                    <img src="img/setting.png" alt="setting" class="settings-icon">
+                    <a href="#">Settings & Privacy <img src="/img/arrow.png" alt="arrow" width="10px"></a>
+                </div>
+
+				<div class="settings-link">
+                    <img src="img/help.png" alt="Help" class="settings-icon">
+                    <a href="#">Help & Support <img src="/img/arrow.png" alt="arrow" width="10px"></a>
+                </div>
+
+				<div class="settings-link">
+                    <img src="img/display.png" alt="display" class="settings-icon">
+                    <a href="#">display & Accessibility <img src="/img/arrow.png" alt="arrow" width="10px"></a>
+                </div>
+
+				<div class="settings-link">
+                    <img src="img/logout.png" alt="logout" class="settings-icon">
+                    <a href="#">Logout <img src="/img/arrow.png" alt="arrow" width="10px"></a>
+                </div>
+            </div> 
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <!-- left-sidebar -->
+        <div class="left-sidebar">
+            <div class="imp-links">
+                <a href="#"><img src="./img/news.png" alt="News">Latest News</a>
+                <a href="#"><img src="./img/friends.png" alt="Friends">Friends</a>
+                <a href="#"><img src="./img/group.png" alt="Group">Group</a>
+                <a href="#"><img src="./img/marketplace.png" alt="Marketplace">Marketplace</a>
+                <a href="#"><img src="./img/watch.png" alt="Watch">Watch</a>
+                <a href="#">See More</a>
+            </div>
+
+            <div class="shortcut-links">
+                <p>Your Shortcuts</p>
+                <a href="#"><img src="./img/shortcut-1.png" alt="shortcut">Web Developers</a>
+                <a href="#"><img src="./img/shortcut-2.png" alt="shortcut">Web Design course</a>
+                <a href="#"><img src="./img/shortcut-3.png" alt="shortcut">Full Stack Development</a>
+                <a href="#"><img src="./img/shortcut-4.png" alt="shortcut">Website Experts</a>
+            </div>
+
+        </div>
+
+        <!-- main-content -->
+        <div class="main-content">
+
+            <div class="story-gallery">
+                <div class="story story1">
+                    <img src="./img/upload.png" alt="Upload">
+                    <p>Create story</p>
+                </div>
+
+                <div class="story story2">
+                    <img src="./img/member-1.png" alt="member-1">
+                    <p>Alison Mina</p>
+                </div>
+
+                <div class="story story3">
+                    <img src="./img/member-2.png" alt="member-2">
+                    <p>Jackson Aston</p>
+                </div>
+
+                <div class="story story4">
+                    <img src="./img/member-3.png" alt="member-3">
+                    <p>Samona Rose</p>
+                </div>
+
+                <div class="story story5">
+                    <img src="./img/member-4.png" alt="member-4">
+                    <p>Luke Person</p>
+                </div>
+            </div>
+
+            <div class="write-post-container">
+                <div class="user-profile">
+                    <img src="./img/profile-pic.png" alt="Profilo">
+                    <div>
+                        <p>Christian Koscielniak Pinto</p>
+                        <small>Public <i class="fas fa-caret-down"></i></small>
+                    </div>
+                </div>
+
+                <div class="post-input-container">
+                    <label>
+                        <textarea rows="3" placeholder="What's on your mind, Christian?"></textarea>
+                    </label>
+
+                    <div class="add-post-links">
+                        <a href="#"><img src="./img/live-video.png" alt="Video">Live video</a>
+                        <a href="#"><img src="./img/photo.png" alt="Photo Video">Photo/Video</a>
+                        <a href="#"><img src="./img/feeling.png" alt="Feeling">Feling/Activity</a>
+                    </div>
+
+                </div>
+                
+            </div>
+
+            <div class="post-container">
+
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="./img/profile-pic.png" alt="Profilo">
+                        <div>
+                            <p>Christian Koscielniak Pinto</p>
+                            <span>June 24 2021, 13:40 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+
+                <p class="post-text">Lorem ipsum,<span>@dolor ipsum</span> dolor sit amet consectetur adipisicing elit. Qui excepturi. <a href="#">#Aulab Hackademy</a></p>
+                <img src="./img/feed-image-1.png" alt="Feed-1" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="./img/like-blue.png" alt="Like">120</div>
+                        <div><img src="./img/comments.png" alt="comments">45</div>
+                        <div><img src="./img/share.png" alt="share">17</div>
+                    </div>
+
+                    <div class="post-profile-icon">
+                        <img src="./img/profile-pic.png" alt="Profile"><i class="fas fa-caret-down"></i>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="post-container">
+
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="./img/member-1.png" alt="Profilo">
+                        <div>
+                            <p>Alison Mina</p>
+                            <span>June 23 2021, 10:00 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+
+                <p class="post-text">Lorem ipsum,<span>@ellipts excepturi</span> dolor sit amet consectetur adipisicing elit. Qui excepturi. <a href="#">#For ocean</a></p>
+                <img src="./img/feed-image-2.png" alt="Feed-1" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="./img/like-blue.png" alt="Like">124</div>
+                        <div><img src="./img/comments.png" alt="comments">55</div>
+                        <div><img src="./img/share.png" alt="share">10</div>
+                    </div>
+
+                    <div class="post-profile-icon">
+                        <img src="./img/member-1.png" alt="Profile"><i class="fas fa-caret-down"></i>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="post-container">
+
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="./img/member-3.png" alt="Profilo">
+                        <div>
+                            <p>Samona Rose</p>
+                            <span>June 20 2021, 23:32 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+
+                <p class="post-text">Lorem ipsum,<span>@One Plus</span> dolor sit amet consectetur adipisicing elit. Qui excepturi. <a href="#">#One Plus 8 Pro</a></p>
+                <img src="./img/feed-image-3.png" alt="Feed-1" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="./img/like-blue.png" alt="Like">90</div>
+                        <div><img src="./img/comments.png" alt="comments">58</div>
+                        <div><img src="./img/share.png" alt="share">63</div>
+                    </div>
+
+                    <div class="post-profile-icon">
+                        <img src="./img/member-3.png" alt="Profile"><i class="fas fa-caret-down"></i>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="post-container">
+
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="./img/member-4.png" alt="Profilo">
+                        <div>
+                            <p>Luke Person</p>
+                            <span>June 24 2021, 21:40 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+
+                <p class="post-text">Lorem ipsum,<span>@Laravel</span> dolor sit amet consectetur adipisicing elit. Qui excepturi. <a href="#">#Love coding</a></p>
+                <img src="./img/feed-image-4.png" alt="Feed-1" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="./img/like-blue.png" alt="Like">300</div>
+                        <div><img src="./img/comments.png" alt="comments">79</div>
+                        <div><img src="./img/share.png" alt="share">30</div>
+                    </div>
+
+                    <div class="post-profile-icon">
+                        <img src="./img/member-4.png" alt="Profile"><i class="fas fa-caret-down"></i>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <button type="button" class="load-more-btn">Load more</button>
+
+        </div>
+
+        <!-- right-sidebar -->
+        <div class="right-sidebar">
+            <div class="sidebar-title">
+                <h4>Events</h4>
+                <a href="#">See All</a>
+            </div>
+
+            <div class="event">
+                <div class="left-event">
+                    <h3>18</h3>
+                    <span>March</span>
+                </div>
+
+                <div class="right-event">
+                    <h4>Social Media</h4>
+                    <p><i class="fas fa-map-marker-alt spazio"></i>Willson Tech Park</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+
+            <div class="event">
+                <div class="left-event">
+                    <h3>22</h3>
+                    <span>June</span>
+                </div>
+
+                <div class="right-event">
+                    <h4>Mobile Marketing</h4>
+                    <p><i class="fas fa-map-marker-alt spazio"></i>Willson Tech Park</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+
+            <div class="sidebar-title">
+                <h4>Advertisement</h4>
+                <a href="#">Close</a>
+            </div>
+
+            <img src="./img/advertisement.png" alt="Advertisement" class="sidebar-ads">
+
+            <div class="sidebar-title">
+                <h4>Conversation</h4>
+                <a href="#">Hide Chat</a>
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="./img/member-1.png" alt="Member online 1">
+                </div>
+                <p>Alison Mina</p>
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="./img/member-2.png" alt="Member online 2">
+                </div>
+                <p>Jackson Aston</p>
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="./img/member-3.png" alt="Member online 3">
+                </div>
+                <p>Samona Rose</p>
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="./img/member-4.png" alt="Member online 4">
+                </div>
+                <p>Luke Person</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <p>Copyright 2021 - Christian Koscielniak Pinto</p>
+    </div>
+
+    <script src="./script.js"></script>
+
+    <!-- My FireBase -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="/__/firebase/8.8.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="/__/firebase/8.8.0/firebase-analytics.js"></script>
+
+    <!-- Initialize Firebase -->
+    <script src="/__/firebase/init.js"></script>
+
+</body>
+</html>
